@@ -42,7 +42,7 @@ jobs:
     
     - name: Check for outdated dependencies
       run: |
-        pip ist --outdated
+        pip list --outdated
 
     - name: Security audit
       run: |
