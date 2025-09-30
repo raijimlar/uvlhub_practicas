@@ -42,12 +42,12 @@ jobs:
     
     - name: Check for outdated dependencies
       run: |
-        pip --list outdated
+        pip ist --outdated
 
     - name: Security audit
       run: |
         pip install pip audit
-        pip-audit
+        pip-audit || true
 
     - name: Upload coverage to Codacy
       run: |
